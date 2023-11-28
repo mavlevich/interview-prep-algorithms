@@ -1,36 +1,24 @@
+//  Find the second-smallest number in an array
+
+
+import static java.lang.Math.min;
 public class Task1 {
-    // Метод для слияния двух отсортированных массивов
-    public static int[] mergeSortedArrays(int[] array1, int[] array2) {
-        int m = array1.length;
-        int n = array2.length;
+    public static int secondMinimumNumber(int[] array) {
+        if (array.length < 2) {
+            return -1;
+        }
+        int firstMinimumNumber = min(array[0], array[1]);
+        int secondMinimumNumber = Math.max(array[0], array[1]);
 
-        int[] mergedArray = new int[m + n];
-
-        int i = 0, j = 0, k = 0;
-
-        while (i < m && j < n) {
-            if (array1[i] <= array2[j]) {
-                mergedArray[k] = array1[i];
-                i++;
-            } else {
-                mergedArray[k] = array2[j];
-                j++;
+        for (int i = 2; i < array.length; i++) {
+            if (array[i] < firstMinimumNumber) {
+                secondMinimumNumber = firstMinimumNumber;
+                firstMinimumNumber = array[i];
             }
-            k++;
+            else if (array[i] < secondMinimumNumber) {
+                secondMinimumNumber = array[i];
+            }
         }
-
-        while (i < m) {
-            mergedArray[k] = array1[i];
-            i++;
-            k++;
-        }
-
-        while (j < n) {
-            mergedArray[k] = array2[j];
-            j++;
-            k++;
-        }
-
-        return mergedArray;
+        return secondMinimumNumber;
     }
 }
