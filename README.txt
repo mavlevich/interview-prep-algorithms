@@ -19,3 +19,10 @@ Implement a string compression function that takes a string as input and prints 
 occurrences of each unique character in the format "character_count." If a character appears only once,
 simply print the character without a count.
 For example, given the input "aabbbcc," the output should be "a2b3c2."
+
+Task5
+Given a palindromic string, modify it by replacing exactly one character with the lexicographically smallest
+lowercase English letter, such that the resulting string is not a palindrome.
+If no such modification is possible, return an empty string.
+
+Example: There are many ways to make "abccba" not a palindrome, such as "zbccba", "aaccba", and "abacba"
