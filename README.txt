@@ -13,3 +13,9 @@ Given two sorted arrays, the task is to merge them in a sorted manner.
 Task3
 Reverse words in a given string
 Example "I love programming" -> "programming love I"
+
+Task4
+Implement a string compression function that takes a string as input and prints the count of consecutive
+occurrences of each unique character in the format "character_count." If a character appears only once,
+simply print the character without a count.
+For example, given the input "aabbbcc," the output should be "a2b3c2."
