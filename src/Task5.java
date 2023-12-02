@@ -30,6 +30,10 @@ public class Task5 {
         char[] chars = palindrome.toCharArray();
         int n = chars.length;
 
+        if (n == 1) {
+            return new String("");
+        }
+
         for (int i = 0; i < n / 2; i++) {
             if (chars[i] != 'a') {
                 chars[n - 1 - i] = 'a';
