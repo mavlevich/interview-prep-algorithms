@@ -18,8 +18,6 @@ Given a palindromic string, modify it by replacing exactly one character with th
 lowercase English letter, such that the resulting string is not a palindrome.
 If no such modification is possible, return an empty string.
 
-Example: There are many ways to make "abccba" not a palindrome, such as "zbccba", "aaccba", and "abacba"
-
 Task 9 (Goldman Sachs)
 Longest Substring Without Repeating Characters
 
