@@ -8,15 +8,14 @@ Task 3
 Reverse words in a given string
 
 Task 4
-Implement a string compression function that takes a string as input and prints the count of consecutive
-occurrences of each unique character in the format "character_count." If a character appears only once,
-simply print the character without a count.
-For example, given the input "aabbbcc," the output should be "a2b3c2."
 
 Task 5
-Given a palindromic string, modify it by replacing exactly one character with the lexicographically smallest
-lowercase English letter, such that the resulting string is not a palindrome.
-If no such modification is possible, return an empty string.
+
+Task 6
+
+Task 7
+
+Task 8
 
 Task 9 (Goldman Sachs)
 Longest Substring Without Repeating Characters
